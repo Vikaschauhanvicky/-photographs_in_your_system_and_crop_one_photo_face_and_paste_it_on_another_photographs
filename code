@@ -1,0 +1,7 @@
+import cv2
+pic1=cv2.imread("vimalsir.jpg")
+pic2=pic1[150:400,280:480]
+pic3=cv2.imread("preetimam.jpg")
+pic3[100:350, 150:350]=pic2
+cv2.imshow("my photo",pic3)
+cv2.waitKey()
